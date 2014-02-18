@@ -26,7 +26,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
@@ -36,36 +35,43 @@
                 </ul>
                 <h3 class="text-muted">prac app two</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
-
+           
             <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+                <div class="row js-contact-list">
+                <!-- this is where the template populates -->
                 </div>
             </div>
+
+            <div class="jumbotron">
+                <div class="js-main-list main-list">
+                    <!-- this is where the Main view will be input into -->
+                </div>
+            </div>
+
 
             <div class="footer">
                 <p>♥ from the Yeoman team</p>
             </div>
 
         </div>
+        
+        <!-- make sure to use id sparingly -->
+        <script type="text/template" id="list-item-template">
+            <div class="col-lg-4 js-list-item-tainer list-item-tainer">
+                <h4><%= name %></h4>
+                <img src="<%= avatar %>"/>
+            </div>
+        </script>
+
+
+         <script type="text/template" id="main-item-template">
+            <img src="<%= avatar %>" class="avatar-main pull-left"/>
+            <h4><%= name %></h4>
+            <h5><%= phone %></h5>
+            <p><%= bio %></p>
+            <img class="close pull-right js-close"src="images/x.png">
+        </script>
+
 
 
         <!-- build:js scripts/vendor.js -->
@@ -102,7 +108,12 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <!-- // <script src="scripts/main.js"></script> -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/data.js"></script>
+        <script src="scripts/contact-model.js"></script>
+        <script src="scripts/list-view.js"></script>
+        <script src="scripts/main-view.js"></script>
         <!-- endbuild -->
 </body>
 </html>
