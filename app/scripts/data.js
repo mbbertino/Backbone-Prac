@@ -6,7 +6,7 @@ var data = [
 		bio: 'Paleo tofu blog Carles skateboard, small batch keffiyeh dreamcatcher. VHS Thundercats hoodie, selfies ugh flannel readymade. Hella retro brunch, wayfarers locavore chia Portland Vice pour-over readymade occupy. Gastropub pork belly kale chips Terry Richardson chillwave. Cray biodiesel 3 wolf moon PBR bicycle rights hoodie, Brooklyn irony dreamcatcher jean shorts Pinterest Williamsburg flannel. Blue Bottle VHS pop-up, ennui hoodie try-hard ugh kitsch Portland fingerstache craft beer. Hashtag YOLO Cosby sweater, Carles synth squid artisan Truffaut meggings cardigan occupy gastropub skateboard.'
 	},
 	{
-		name: 'Jake Ass',
+		name: 'Jake Please',
 		phone: '233.456.5647',
 		avatar: 'http://31.media.tumblr.com/tumblr_m5frvvOMVm1rvpkxwo1_400.jpg',
 		bio: 'Odd Future gentrify meh biodiesel, Pitchfork polaroid Marfa Cosby sweater fingerstache meggings wolf +1 keffiyeh. Etsy YOLO Banksy, artisan flannel vegan organic. Pinterest Bushwick chia, Blue Bottle Neutra gastropub tousled single-origin coffee wayfarers. Banksy DIY readymade, vegan plaid umami mixtape Bushwick. Banjo forage Godard trust fund Shoreditch farm-to-table keytar meggings. You probably haven\'t heard of them cray tousled Odd Future. Gluten-free ethnic bicycle rights, squid street art slow-carb irony authentic tattooed gastropub locavore whatever 3 wolf moon shabby chic.'
