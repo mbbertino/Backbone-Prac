@@ -6,11 +6,16 @@ var MainView = Backbone.View.extend({
 
 	events: {
 		"click .js-close": "closeMainView",
+		"click .js-edit-btn": "edit",
+		// "dblclick .js-main-phone": "edit",
+		// "dblclick .js-main-bio": "",
+
 	},
 
 	initialize: function(){
 			$('.js-main-list').html( this.el );
 			this.render()
+			this.listenTo(this.model, 'change', this.render)
 	},
 
 	render: function(){
@@ -19,5 +24,9 @@ var MainView = Backbone.View.extend({
 
 	closeMainView: function(){
 		this.remove()
+	},
+
+	edit: function() {
+		new EditView({model: this.model})
 	}
 })

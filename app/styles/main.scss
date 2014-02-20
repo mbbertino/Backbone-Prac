@@ -47,6 +47,51 @@ body {
     margin: 30px 0;
 }
 
+.hidden {
+    height: 0px;
+    opacity: 0px;
+}
+
+.get-started {
+    text-align: center;
+
+    .get-started-text{
+    }
+
+    .inputtainer {
+        overflow: hidden;
+        margin-top: 20px;
+        background: #eeeeee;
+        border-radius: 6px;
+
+        .name-input {
+            padding-left: 5px;
+            margin: 10px 0 0;
+            width: 100%;
+        }
+
+        .phone-input {
+            padding-left: 5px;
+            margin: 10px 0 0;
+            width: 100%;
+        }
+
+        .bio-input {
+            padding-left: 5px;
+            margin: 10px 0;
+            width: 100%;
+            
+            &:focus {
+                height: 100px;
+            }
+        }
+
+        .submit-new-avatar-btn {
+            margin-bottom: 10px;
+        }
+    }
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
@@ -80,9 +125,23 @@ body {
             padding-top: 80px;
         }
 
+        input.js-main-name {
+            padding-left: 5px;
+            margin-top: 80px;
+            background: #fff;
+        }
+
         h5 {
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+
+        input.js-main-phone {
+            padding-left: 5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background: #fff;
+            height: 50px;
         }
 
         p {
@@ -93,25 +152,41 @@ body {
             letter-spacing: 1px;
             font-size: 16px;
         }
+
+        textarea {
+            width: 100%;
+            background: #fff;
+            margin-top: 40px;
+            padding: 10px;
+            letter-spacing: 1px;
+            font-size: 12px;
+            height: 150px;
+        }
     }
 }
 
 /* Supporting marketing content */
 .marketing {
-    margin: 40px 0;
+    margin: 20px 0;
     p + h4 {
         margin-top: 28px;
     }
-
-    .list-item-tainer {
-
+    .contact-list {
+        margin: 20px 0 0 0;
+        width: 100%;
+        background: #eeeeee;
         border-radius: 6px;
-        text-align: center;
+        padding: 10px 0;
+            
+        .list-item-tainer {
+            border-radius: 6px;
+            text-align: center;
 
-        img {
-            height: 100px;
-            width: 100px;
-            border-radius: 0px 100px 100px 100px;
+            img {
+                height: 100px;
+                width: 100px;
+                border-radius: 0px 100px 100px 100px;
+            }
         }
     }
 }

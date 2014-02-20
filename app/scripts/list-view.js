@@ -11,6 +11,7 @@ var ListView = Backbone.View.extend({
 	initialize: function(){
 		$('.js-contact-list').prepend( this.el )
 		this.render();
+		this.listenTo(this.model, 'change', this.render)
 	},
 
 	render: function(){

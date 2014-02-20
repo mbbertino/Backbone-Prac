@@ -33,11 +33,27 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <h3 class="text-muted">prac app two</h3>
+                <h3 class="text-muted">Fun with Backbone!</h3>
             </div>
            
+            <div class="get-started col-lg-12">
+                <div class="js-get-started-text get-started-text col-lg-12">
+                    <h1>Add an Avatar</h1>
+                </div>
+                <div class="row">
+                    <div class="js-inputtainer inputtainer col-lg-12">
+                        <h3>A Few More Steps!</h3>
+                        <input placeholder ="NAME" class="name-input js-name-input"/>
+                        <input placeholder ="PHONE" class="phone-input js-phone-input"/>
+                        <input placeholder ="BIO" class="bio-input js-bio-input"/>
+                        <button type="button" class="js-submit-new-avatar-btn submit-new-avatar-btn btn btn-default">Submit</button>
+                        <button type="button" class="js-delete-server submit-new-avatar-btn btn btn-danger">Delete Server</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="row marketing">
-                <div class="row js-contact-list">
+                <div class="js-contact-list contact-list col-lg-12">
                 <!-- this is where the template populates -->
                 </div>
             </div>
@@ -66,12 +82,21 @@
 
          <script type="text/template" id="main-item-template">
             <img src="<%= avatar %>" class="avatar-main pull-left"/>
-            <h4><%= name %></h4>
-            <h5><%= phone %></h5>
-            <p><%= bio %></p>
+            <h4 class="js-main-name main-name"><%= name %></h4>
+            <h5 class="js-main-phone main-phone"><%= phone %></h5>
+            <p class="js-main-bio main-bio"><%= bio %></p>
             <img class="close pull-right js-close"src="images/x.png">
+            <button type="button" class="js-edit-btn btn btn-default">edit</button>
         </script>
 
+        <script type="text/template" id="edit-item-template">
+            <img src="<%= avatar %>" class="avatar-main pull-left"/>
+            <input class="js-main-name-edit main-name" value='<%= name %>'/>
+            <input class="js-main-phone-edit main-phone"value='<%= phone %>'/>
+            <textarea class="js-main-bio-edit main-bio"><%= bio %></textarea>
+            <img class="close pull-right js-close"src="images/x.png"/>
+            <button type="button" class="js-save-btn btn btn-default">save</button>
+        </script>
 
 
         <!-- build:js scripts/vendor.js -->
@@ -114,6 +139,7 @@
         <script src="scripts/contact-model.js"></script>
         <script src="scripts/list-view.js"></script>
         <script src="scripts/main-view.js"></script>
+        <script src="scripts/edit-view.js"></script>
         <!-- endbuild -->
 </body>
 </html>
